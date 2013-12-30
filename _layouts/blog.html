@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div id="blog" class="row">
+  <div id="content" class="col-md-9">
+    {{ content }}
+  </div>
+  <div id="sidebar" class="col-md-3">
+    {% include profile.html %}
+    <section>
+      <h2>Categories:</h2>
+      <div class="list-group">
+        {% for category in site.custom_config.categories %}
+          <a class="list-group-item" href="/blog/{{ category.slug }}/"><span class="glyphicon glyphicon-bookmark"></span> {{ category.text }}</a>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</div>
+

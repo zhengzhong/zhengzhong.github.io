@@ -1,0 +1,28 @@
+name: ZHENG Zhong
+pygments: true
+exclude: ['Rakefile', 'README.md', 'config.rb', '*.bat', '*.bak', 'scripts']
+permalink: /blog/:year/:month/:day/:title/
+relative_permalinks: false
+paginate: 10
+paginate_path: /blog/page:num
+
+# Custom config namespace
+custom_config:
+
+  navigation:
+    - text: Blog
+      url: /blog/
+#    - text: Pages
+#      url: /pages/
+
+  categories:
+    - slug: thoughts
+      text: 思想起
+    - slug: diary
+      text: 流水帐
+    - slug: coding
+      text: 有关编程
+    - slug: interests
+      text: 无关编程
+    - slug: unclassified
+      text: 杂七杂八

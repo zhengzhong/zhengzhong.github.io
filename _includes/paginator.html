@@ -1,0 +1,36 @@
+<div style="text-align: center;">
+  <ul class="pagination">
+    <!-- Previous page -->
+    {% if paginator.previous_page %}
+      <li>
+        {% if paginator.previous_page == 1 %}
+          <a href="/blog/">&laquo;</a>
+        {% else %}
+          <a href="/blog/{{ paginator.previous_page_path }}">&laquo;</a>
+        {% endif %}
+      </li>
+    {% else %}
+      <li class="disabled"><a href="javascript:void(0);">&laquo;</a></li>
+    {% endif %}
+    <!-- Page links: page #1 -->
+    {% if paginator.page == 1 %}
+      <li class="active"><a href="/blog/">1</a></li>
+    {% else %}
+      <li><a href="/blog/">1</a></li>
+    {% endif %}
+    <!-- Page links: other pages -->
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+        <li class="active"><a href="/blog/page{{ count }}">{{ count }}</a></li>
+      {% else %}
+        <li><a href="/blog/page{{ count }}">{{ count }}</a></li>
+      {% endif %}
+    {% endfor %}
+    <!-- Next page -->
+    {% if paginator.next_page %}
+      <li><a href="/blog/{{ paginator.next_page_path }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><a href="javascript:void(0);">&raquo;</a></li>
+    {% endif %}
+  </ul>
+</div>
