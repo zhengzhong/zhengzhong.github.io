@@ -27,5 +27,8 @@ custom_config:
     - slug: unclassified
       text: 杂七杂八
 
+  disqus:
+    id: zhengzhong
+
   google_analytics:
     account: UA-356705-1
