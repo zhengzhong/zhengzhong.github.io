@@ -26,3 +26,6 @@ custom_config:
       text: 无关编程
     - slug: unclassified
       text: 杂七杂八
+
+  google_analytics:
+    account: UA-356705-1
