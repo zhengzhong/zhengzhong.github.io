@@ -6,7 +6,7 @@
         {% if paginator.previous_page == 1 %}
           <a href="/blog/">&laquo;</a>
         {% else %}
-          <a href="/blog/{{ paginator.previous_page_path }}">&laquo;</a>
+          <a href="{{ paginator.previous_page_path }}">&laquo;</a>
         {% endif %}
       </li>
     {% else %}
@@ -28,7 +28,7 @@
     {% endfor %}
     <!-- Next page -->
     {% if paginator.next_page %}
-      <li><a href="/blog/{{ paginator.next_page_path }}">&raquo;</a></li>
+      <li><a href="{{ paginator.next_page_path }}">&raquo;</a></li>
     {% else %}
       <li class="disabled"><a href="javascript:void(0);">&raquo;</a></li>
     {% endif %}
