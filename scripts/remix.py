@@ -49,9 +49,10 @@ class Verifier(Coder):
     separator = '|'
 
     def encode(self, filename, bytes, **kwargs):
+        basename = os.path.basename(filename)
         size = str(len(bytes))
         md5 = hashlib.md5(bytes).hexdigest().upper()
-        bytes = self.separator.join([__version__, filename, size, md5, bytes])
+        bytes = self.separator.join([__version__, basename, size, md5, bytes])
         root, ext = os.path.splitext(filename)
         return '%s.v' % root, bytes
 
@@ -59,7 +60,7 @@ class Verifier(Coder):
         tokens = bytes.split(self.separator, 4)
         if len(tokens) != 5:
             raise RemixError('Invalid bytes: should contain at least 5 tokens.')
-        version, real_filename, size, md5, bytes = tokens
+        version, basename, size, md5, bytes = tokens
         actual_size = len(bytes)
         actual_md5 = hashlib.md5(bytes).hexdigest().upper()
         if version != __version__:
@@ -68,6 +69,7 @@ class Verifier(Coder):
             raise RemixError('Inconsistent size: %s (actual: %s)' % (size, actual_size))
         if md5 != actual_md5:
             raise RemixError('Invalid MD5: %s (actual: %s)' % (md5, actual_md5))
+        real_filename = os.path.join(os.path.dirname(filename), basename)
         return real_filename, bytes
 
 
