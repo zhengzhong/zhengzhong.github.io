@@ -11,7 +11,7 @@ This post lists all the Git command that I use frequently.
 [Pro Git](http://git-scm.com/book) is an excellent book on how to use Git.
 
 
-Clone a Repository
+Clone a repository
 ===================
 
     # Clone from an existing ("bare") remote repo.
@@ -19,7 +19,7 @@ Clone a Repository
     $ git clone http://<repo-url> <local-direcotry>
 
 
-Create a Bare Repository
+Create a bare repository
 =========================
 
     # initialize a bare repository
@@ -30,7 +30,7 @@ Create a Bare Repository
     $ git clone --bare -l <non-bare-repo> <new-bare-repo>
 
 
-Set User Information
+Set user information
 =====================
 
     # Set user info globally (applicable on all the Git repos on this computer)
@@ -51,14 +51,14 @@ Set User Information
     $ git config --get --local user.email
 
 
-Check and Set End-of-Line Setting
+Check and set end-of-line setting
 ==================================
 
     $ git config --global --get core.autocrlf  # Should be "true"
     $ git config --global core.autocrlf true   # Set it to "true"
 
 
-Undo Changes
+Undo changes
 =============
 
     # restore the entire working tree to the last committed state
@@ -72,7 +72,7 @@ Undo Changes
     $ git checkout HEAD <file-name>
 
 
-Push Changes to Remote Repository
+Push changes to remote repository
 ==================================
 
     # prepare the http.proxy config: check, add, or unset
@@ -93,8 +93,8 @@ Push Changes to Remote Repository
     $ git push origin master
 
 
-Tagging
-========
+Create tags
+============
 
     # list available tags in alphabetical order (the order has no real importance)
     $ git tag
@@ -131,8 +131,8 @@ pushed explicitly.
     $ git push origin --tags
 
 
-Renaming a Remote Tag
-======================
+Rename a remote tag
+====================
 
 To renaming an existing tag to a new name:
 
@@ -147,7 +147,51 @@ Then for all other local repositories, to synchronize tags with remote repositor
     $ git fetch                      # Get tags back from remote repository
 
 
-Create and Apply Patches
+Work with local branches
+=========================
+
+Local branches can be used by a single developer, when collaboration is not needed. A typical workflow is:
+
+**Step 1:** Create and checkout a local branch from ``master``
+
+    # Make sure we are at master
+    $ git branch
+      ...
+    * master
+      ...
+
+    # Create and checkout a local branch from master.
+    $ git check -b local-dev
+
+**Step 2:** Work on the local branch -- all changes are committed in this local branch.
+
+**Step 3:** As the ``master`` branch might also evolve, keep the local branch updated.
+
+To merge changes from ``master`` into the local branch, ``git rebase`` is preferred to ``git merge``.
+
+    # Update the master branch.
+    $ git checkout master
+    $ git pull
+
+    # Merge (via git rebase) changes from master back into the local branch.
+    $ git checkout local-dev
+    $ git rebase master
+
+**Step 4:** Once the development is done, merge changes into ``master``, and push to the remote repository.
+
+If the local branch is synchronized with ``master`` via ``git rebase``, merging from the local branch into ``master``
+should simply be a fast-forward merge.
+
+    $ git checkout master
+    $ git merge local-dev
+    $ git push
+
+**Step 5:** Final step: delete the local branch.
+
+    $ git branch -d local-dev
+
+
+Create and apply patches
 =========================
 
 To create patches from one repo, start by listing the changelog:
