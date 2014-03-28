@@ -137,7 +137,7 @@ Rename a remote tag
 To renaming an existing tag to a new name:
 
     $ git tag new-tag old-tag             # Create new-tag as an alias of old-tag (locally)
-    $ git tag old-tag                     # Delete old-tag (locally)
+    $ git tag -d old-tag                  # Delete old-tag (locally)
     $ git push origin :refs/tags/old-tag  # Delete old-tag from remote repository
     $ git push --tags                     # Push tags to remote repository (thus create new-tag)
 
