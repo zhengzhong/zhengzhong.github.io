@@ -29,7 +29,7 @@ body {
   text-decoration: none;
 }
 
-/* ---------- common styles -------------------------------------------------------------------- */
+/* ---------- common styles ------------------------------------------------ */
 
 section, .section {
   margin-bottom: 20px;
@@ -52,7 +52,7 @@ section, .section {
   min-width: 16px;
 }
 
-/* ---------- profile -------------------------------------------------------------------------- */
+/* ---------- profile ------------------------------------------------------ */
 
 .profile .avatar {
   display: block;
@@ -76,7 +76,7 @@ section, .section {
   padding-right: 4px;
 }
 
-/* ---------- sidebar -------------------------------------------------------------------------- */
+/* ---------- sidebar ------------------------------------------------------ */
 
 #sidebar h2 {
   padding: 20px 0 10px 0;
@@ -85,7 +85,7 @@ section, .section {
 }
 
 
-/* ---------- post list ------------------------------------------------------------------------ */
+/* ---------- post list ---------------------------------------------------- */
 
 .post-list li {
   padding-bottom: 12px;
@@ -142,7 +142,7 @@ section, .section {
   color: #888888;
 }
 
-/* ---------- post ----------------------------------------------------------------------------- */
+/* ---------- post --------------------------------------------------------- */
 
 .post .meta {
   text-align: right;
@@ -166,3 +166,69 @@ section, .section {
   max-width: 640px;
 }
 
+/* ---------- photo (with caption) ----------------------------------------- */
+
+.photo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+       -o-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.photo img {
+  position: absolute;
+  width: 100%;
+}
+
+.photo .caption,
+.photo .caption-fixed {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #333333;
+  color: #ffffff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.photo .caption a,
+.photo .caption-fixed a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.photo .caption a:hover, .photo .caption a:focus,
+.photo .caption-fixed a:hover, .photo .caption-fixed a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ~ ~ ~ photo caption effect ~ ~ ~ */
+
+.photo .caption {
+  -webkit-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+       -o-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.photo:hover .caption, .photo:active .caption {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+       -o-transform: translateY(0);
+          transform: translateY(0);
+}

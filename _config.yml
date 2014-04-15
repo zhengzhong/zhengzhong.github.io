@@ -12,6 +12,8 @@ custom_config:
   navigation:
     - text: Blog
       url: /blog/
+    - text: Photos
+      url: /photos/
 #    - text: Pages
 #      url: /pages/
 

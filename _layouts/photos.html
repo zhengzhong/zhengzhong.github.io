@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div id="photos" class="container">
+
+  <div class="page-header"><h1>{{ page.title }}</h1></div>
+  <div>{{ content }}</div>
+
+  {% for album in page.albums %}
+    <div class="row">
+      <div class="text-right">
+        <a class="text-muted" style="margin-right: 20px; text-decoration: none;" href="{{ album.url }}">
+          {{ album.title }} <span class="glyphicon glyphicon-camera"></span>
+        </a>
+      </div>
+      {% for photo in album.photos %}
+        <div class="col-xs-6 col-md-3">
+          <div class="photo">
+            <div class="caption"><a href="{{ photo.url }}">{{ photo.title }}</a></div>
+            <a href="{{ photo.url }}"><img src="{{ photo.image }}" alt="{{ photo.title }}"/></a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+
+  <script type="text/javascript">//<![CDATA[
+    $(function() {
+      $('.photo img').one('load', function() {
+        console.log('Loaded ' + $(this).attr('alt') + ' from ' + $(this).attr('src'));
+        // Get the (adjusted) size of the image, in pixels.
+        var width = $(this).width();
+        var height = $(this).height();
+        // Fix the size of the parent element that contains this image.
+        $(this).parents('.photo').width(width).height(width);
+        // Center the image.
+        if (width > height) {
+          var left = -(width / height - 1) * width * 0.5;
+          $(this).height('100%').width('auto').css('left', left + 'px');
+        } else {
+          var top = -(height - width) * 0.5;
+          $(this).width('100%').height('auto').css('top', top + 'px');
+        }
+      }).each(function() {
+        if (this.complete) {
+          $(this).load();
+        }
+      });
+    });
+  //]]></script>
+
+</div>

@@ -1,0 +1,104 @@
+---
+layout: photos
+title: Photos
+permalink: /photos/
+
+albums:
+
+  - title: 'Landscape &bull; 风景'
+    url: https://www.flickr.com/photos/zhengzhong/tags/landscape/
+    photos:
+      - title: '村头老树'
+        image: https://farm3.staticflickr.com/2870/13831912894_6d64ce127f_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/13831912894/
+      - title: '马恩河畔，天色向晚'
+        image: https://farm4.staticflickr.com/3718/13826246654_07f2739253_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/13826246654/
+      - title: '南京，江宁'
+        image: https://farm8.staticflickr.com/7029/13820944653_22d47b9bb8_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/13820944653/
+      - title: '日落黄昏时'
+        image: https://farm8.staticflickr.com/7028/13677179315_1f769ff2bf_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/13677179315/
+      - title: 'Serre Chevalier'
+        image: https://farm6.staticflickr.com/5526/11634228853_cc031f9303_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/11634228853/
+      - title: 'Serre Chevalier'
+        image: https://farm6.staticflickr.com/5495/11634782036_a4aebda40c_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/11634782036/
+      - title: 'Venice'
+        image: https://farm4.staticflickr.com/3656/3390398219_f28d610fa3_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/3390398219/
+      - title: 'Venice'
+        image: https://farm4.staticflickr.com/3562/3380765552_883e41fafb_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/3380765552/
+      - title: 'Tyn Church, Prague'
+        image: https://farm4.staticflickr.com/3161/3001025120_512db20db2_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/3001025120/
+      - title: 'Auber, Paris'
+        image: https://farm4.staticflickr.com/3220/2337699330_4648dfa595_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/2337699330/
+      - title: 'Saint Gervais'
+        image: https://farm3.staticflickr.com/2028/2333273409_367a05e8d6_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/2333273409/
+      - title: 'Saint Gervais'
+        image: https://farm3.staticflickr.com/2034/2334099748_cd4f786e83_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/2334099748/
+      - title: 'Chimère de Notre-Dame de Paris'
+        image: https://farm3.staticflickr.com/2404/2333857224_59ea98cb8f_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/2333857224/
+      - title: 'Chimère de Notre-Dame de Paris'
+        image: https://farm3.staticflickr.com/2375/2333857030_5a193025e4_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/2333857030/
+      - title: 'Chimère de Notre-Dame de Paris'
+        image: https://farm4.staticflickr.com/3144/2333030383_57469a18be_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/2333030383/
+      - title: 'Chimère de Notre-Dame de Paris'
+        image: https://farm3.staticflickr.com/2003/2333030179_0e020ed12b_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/2333030179/
+
+  - title: 'Portrait &bull; 人物'
+    url: https://www.flickr.com/photos/zhengzhong/tags/portrait/
+    photos:
+      - title: 'Wenwen'
+        image: https://farm4.staticflickr.com/3679/13819032065_90ac2bd72f.jpg
+        url: https://www.flickr.com/photos/zhengzhong/13819032065/
+      - title: 'M. W.'
+        image: https://farm4.staticflickr.com/3157/3057196598_1eabc566c5.jpg
+        url: https://www.flickr.com/photos/zhengzhong/3057196598/
+      - title: '美眉'
+        image: https://farm4.staticflickr.com/3235/3057207902_d5e044e6c0.jpg
+        url: https://www.flickr.com/photos/zhengzhong/3057207902/
+      - title: 'Java'
+        image: https://farm4.staticflickr.com/3112/3152173996_210c145da9.jpg
+        url: https://www.flickr.com/photos/zhengzhong/3152173996/
+      - title: 'Sherwood'
+        image: https://farm4.staticflickr.com/3676/10805942186_110d9faa59.jpg
+        url: https://www.flickr.com/photos/zhengzhong/10805942186/
+      - title: 'La Chasse au Trésor'
+        image: https://farm3.staticflickr.com/2476/3688491320_4716d1bf97.jpg
+        url: https://www.flickr.com/photos/zhengzhong/3688491320/
+      - title: 'Lesbian and Gay Pride 2009'
+        image: https://farm3.staticflickr.com/2650/3682209261_6869fdc7e2.jpg
+        url: https://www.flickr.com/photos/zhengzhong/3682209261/
+      - title: 'Lesbian and Gay Pride 2009'
+        image: https://farm3.staticflickr.com/2440/3667429427_bc93d42735.jpg
+        url: https://www.flickr.com/photos/zhengzhong/3667429427/
+
+  - title: 'Drawing &bull; 涂鸦'
+    url: https://www.flickr.com/photos/zhengzhong/tags/drawing/
+    photos:
+      - title: 'Kiss (Pablo Picasso)'
+        image: https://farm9.staticflickr.com/8484/8252562794_30ff26e065_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/8252562794/
+      - title: 'Starry Night (Vincent van Gogh)'
+        image: https://farm8.staticflickr.com/7142/6642742763_2031082c88_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/6642742763/
+      - title: 'Wheatfield with Cypresses (Vincent van Gogh)'
+        image: https://farm8.staticflickr.com/7011/6630752079_df0b239821_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/6630752079/
+      - title: 'Big Cat'
+        image: https://farm7.staticflickr.com/6209/6110198123_c631bf2b36_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/6110198123/
+
+---
