@@ -2,6 +2,11 @@ body {
   padding-top: 50px; /* leave space for fixed navbar */
 }
 
+.navbar-inverse {
+  background-color: #333333;
+  border-bottom: 1px solid #333333;
+}
+
 #main-wrapper {
   min-height: 500px;
 }
@@ -12,11 +17,10 @@ body {
 }
 
 #footer-wrapper {
-  margin-top: 20px;
   padding: 40px 0 40px 0;
+  font-size: 90%;
   color: #ffffff;
-  background-color: #222222;
-  border-top: 8px solid #888888;
+  background-color: #333333;
 }
 
 #footer-wrapper a {
@@ -29,7 +33,36 @@ body {
   text-decoration: none;
 }
 
+/* ---------- inverse ------------------------------------------------------ */
+
+.inverse {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.inverse a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.inverse a:hover, .inverse a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /* ---------- common styles ------------------------------------------------ */
+
+.huge {
+  font-size: 200%;
+}
+
+.xhuge {
+  font-size: 500%;
+}
+
+.xxhuge {
+  font-size: 1000%;
+}
 
 section, .section {
   margin-bottom: 20px;
