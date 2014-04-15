@@ -75,14 +75,12 @@
     </header>
 
     <div id="main-wrapper">
-      <div class="container">
-        {{ content }}
-      </div>
+      {{ content }}
     </div>
 
     <div id="footer-wrapper">
       <div id="footer" class="container">
-        <p>Copyright &copy; 2013 {{ site.name }}. All rights reserved.</p>
+        <p>Copyright &copy; 2013-{{ site.time|date:"%Y" }} {{ site.name }}. All rights reserved.</p>
         <ul class="list-unstyled">
           <li>Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://getbootstrap.com">Twitter Bootstrap</a></li>
           <li>Last updated at {{ site.time|date:"%a, %d %b %Y, %H:%M:%S" }}</li>
