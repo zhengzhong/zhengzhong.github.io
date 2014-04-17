@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="cover">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </div>
+</div>
+
+<script type="text/javascript">//<![CDATA[
+  $(function() {
+    var backgroundColor = $('.cover').css('background-color');
+    $('body').css('background-color', backgroundColor);
+  });
+//]]></script>

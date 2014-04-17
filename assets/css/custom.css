@@ -18,8 +18,8 @@ body {
 
 #footer-wrapper {
   padding: 40px 0 40px 0;
-  font-size: 90%;
-  color: #ffffff;
+  font-size: 85%;
+  color: #bbbbbb;
   background-color: #333333;
 }
 
@@ -33,36 +33,59 @@ body {
   text-decoration: none;
 }
 
-/* ---------- inverse ------------------------------------------------------ */
-
-.inverse {
-  background-color: #333333;
-  color: #ffffff;
+#sidebar h2 {
+  padding: 20px 0 10px 0;
+  font-size: 140%;
+  color: #888888;
 }
 
-.inverse a {
+/* ---------- social icons ------------------------------------------------- */
+
+.social-icons-grayscale a img {
+  background-color: #444444;
+}
+
+.social-icons-grayscale a:hover img, .social-gray a:focus img {
+  background-color: #555555;
+}
+
+/* ---------- cover page --------------------------------------------------- */
+
+.cover {
+  padding: 80px 0 80px 0;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+}
+
+.cover h1 {
+  font-size: 500%;
+  padding-bottom: 40px;
+}
+
+.cover a {
   color: #999999;
   text-decoration: none;
 }
 
-.inverse a:hover, .inverse a:focus {
+.cover a:hover, .cover a:focus {
   color: #ffffff;
-  text-decoration: none;
+  outline: none; /* remove the annoying dotted outline */
 }
 
-/* ---------- common styles ------------------------------------------------ */
+.cover p {
+  font-size: 160%;
+}
 
-.huge {
+.cover .big {
   font-size: 200%;
 }
 
-.xhuge {
-  font-size: 500%;
-}
-
-.xxhuge {
+.cover .huge {
   font-size: 1000%;
 }
+
+/* ---------- common styles ------------------------------------------------ */
 
 section, .section {
   margin-bottom: 20px;
@@ -80,43 +103,6 @@ section, .section {
 .page-header, .page-header h1 {
   margin-top: 0;
 }
-
-.fa, .glyphicon {
-  min-width: 16px;
-}
-
-/* ---------- profile ------------------------------------------------------ */
-
-.profile .avatar {
-  display: block;
-  max-width: 200px;
-  margin-bottom: 10px;
-}
-
-.profile .name {
-  font-size: 200%;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.profile .social-links {
-  list-style: none outside none;
-  padding-left: 0;
-}
-
-.profile .social-links > li {
-  display: inline-block;
-  padding-right: 4px;
-}
-
-/* ---------- sidebar ------------------------------------------------------ */
-
-#sidebar h2 {
-  padding: 20px 0 10px 0;
-  font-size: 140%;
-  color: #888888;
-}
-
 
 /* ---------- post list ---------------------------------------------------- */
 
