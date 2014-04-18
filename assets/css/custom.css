@@ -184,6 +184,7 @@ section, .section {
 .post .content img {
   padding: 4px;
   max-width: 640px;
+  border: 1px solid #dddddd;
 }
 
 /* ---------- photo (with caption) ----------------------------------------- */
