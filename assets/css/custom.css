@@ -1,5 +1,6 @@
 body {
   padding-top: 50px; /* leave space for fixed navbar */
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",宋体,sans-serif;
 }
 
 .navbar-inverse {
@@ -77,15 +78,15 @@ body {
   font-size: 160%;
 }
 
-.cover .big {
+/* ---------- common styles ------------------------------------------------ */
+
+.big {
   font-size: 200%;
 }
 
-.cover .huge {
+.huge {
   font-size: 1000%;
 }
-
-/* ---------- common styles ------------------------------------------------ */
 
 section, .section {
   margin-bottom: 20px;
