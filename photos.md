@@ -8,15 +8,15 @@ albums:
   - title: 'Landscape &bull; 风景'
     url: https://www.flickr.com/photos/zhengzhong/tags/landscape/
     photos:
-      - title: '村头老树'
-        image: https://farm3.staticflickr.com/2870/13831912894_6d64ce127f_z.jpg
-        url: https://www.flickr.com/photos/zhengzhong/13831912894/
+      - title: 'Dinant, Belgium'
+        image: https://farm8.staticflickr.com/7171/13961395184_d209734e58_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/13961395184
+      - title: 'Mont St. Michel'
+        image: https://farm8.staticflickr.com/7060/13900587576_ffebb65fb1_z.jpg
+        url: https://www.flickr.com/photos/zhengzhong/13900587576
       - title: '马恩河畔，天色向晚'
         image: https://farm4.staticflickr.com/3718/13826246654_07f2739253_z.jpg
         url: https://www.flickr.com/photos/zhengzhong/13826246654/
-      - title: '南京，江宁'
-        image: https://farm8.staticflickr.com/7029/13820944653_22d47b9bb8_z.jpg
-        url: https://www.flickr.com/photos/zhengzhong/13820944653/
       - title: '日落黄昏时'
         image: https://farm8.staticflickr.com/7028/13677179315_1f769ff2bf_z.jpg
         url: https://www.flickr.com/photos/zhengzhong/13677179315/
