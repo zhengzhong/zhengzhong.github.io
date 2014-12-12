@@ -3,14 +3,16 @@ layout: blog
 title: Blog
 ---
 
-<div id="blog">
-
-  <div class="page-header"><h1>Blog ({{ site.posts|size }})</h1></div>
-
-  <div class="section">
-    {% assign post_list = paginator.posts %}
-    {% include post_list.html %}
-    {% include paginator.html %}
-  </div>
-
+<div class="page-header">
+  <h1>Blog <small>({{ site.posts|size }})</small></h1>
 </div>
+
+<div class="alert alert-warning">
+  <span class="glyphicon glyphicon-info-sign"></span> 我已经（几乎）不再更新我的博客了。这里是我以前的博客文章，立此存照。
+</div>
+
+<section>
+  {% assign post_list = paginator.posts %}
+  {% include post_list.html %}
+  {% include paginator.html %}
+</section>

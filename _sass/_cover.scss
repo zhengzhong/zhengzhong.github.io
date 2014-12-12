@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import "mixins";
+
+$cover-color-primary: #888;
+$cover-color-inverse: #fff;
+
+.cover {
+  padding: 40px 0;
+  color: $cover-color-primary;
+  font-size: 200%;
+  text-align: center;
+
+  h1 {
+    font-size: 400%;
+    margin: 20px 0;
+    white-space: nowrap;
+  }
+
+  h2 {
+    font-size: 160%;
+    margin: 20px 0;
+  }
+
+  a {
+    color: lighten($cover-color-primary, 10%);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $cover-color-primary;
+      text-decoration: none;
+    }
+  }
+
+  .list-outline {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none outside none;
+    text-align: center;
+
+    > li {
+      display: inline-block;
+      width: 200px;
+      height: 240px;
+      overflow: hidden;
+      margin: 20px;
+      padding: 0;
+
+      > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        color: $cover-color-primary;
+        text-decoration: none;
+        border: 4px solid $cover-color-primary;
+        @include border-radius(10px);
+
+        > .glyphicon {
+          display: block;
+          font-size: 400%;
+        }
+
+        > h3 {
+          font-size: 120%;
+        }
+
+        &:hover,
+        &:focus {
+          color: $cover-color-inverse;
+          background-color: $cover-color-primary;
+          outline: none;  // remove the annoying dotted outline.
+        }
+      }
+    }
+  }
+}

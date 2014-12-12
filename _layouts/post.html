@@ -2,50 +2,32 @@
 layout: blog
 ---
 
-<div id="post" class="post">
+<div class="post">
 
   <div class="page-header"><h1>{{ page.title }}</h1></div>
 
-  <div class="meta">
-    <span class="text-muted">
+  <ul class="list-inline meta">
+    <li class="text-muted">
       <span class="glyphicon glyphicon-edit"></span>
       Posted on {{ page.date|date_to_string }}
       {% if page.last_updated %}
         , last updated on {{ page.last_updated|date_to_string }}
       {% endif %}
-    </span>
-    &nbsp;
-    {% for category in page.categories %}
-      <a class="label label-primary" href="/blog/{{ category }}/">{{ category }}</a>
-    {% endfor %}
-    {% for tag in page.tags %}
-      <span class="label label-default">{{ tag }}</span>
-    {% endfor %}
-  </div>
+    </li>
+    <li>
+      {% for category in site.data.blog.categories %}
+        {% if page.categories contains category.slug %}
+          <a class="label label-primary" href="{{ site.baseurl }}/blog/{{ category.slug }}/">{{ category.text }}</a>
+        {% endif %}
+      {% endfor %}
+      {% for tag in page.tags %}
+        <span class="label label-default">{{ tag }}</span>
+      {% endfor %}
+    </li>
+  </ul>
 
-  <div class="section">
-    <div class="content">{{ content }}</div>
-  </div>
-
-  {% if site.custom_config.disqus.id %}
-    <hr/>
-    <div class="disqus section">
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">//<![CDATA[
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = '{{ site.custom_config.disqus.id }}';
-        var disqus_identifier = '{{ page.url }}';
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      //]]></script>
-      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
-  {% endif %}
+  <section class="content">
+    {{ content }}
+  </section>
 
 </div>
-

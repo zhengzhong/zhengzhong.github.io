@@ -4,13 +4,11 @@ title: 流水帐
 permalink: /blog/diary/
 ---
 
-<div id="category">
-
-  <div class="page-header"><h1>流水帐 ({{ site.categories.diary|size }})</h1></div>
-
-  <div class="section">
-    {% assign post_list = site.categories.diary %}
-    {% include post_list.html %}
-  </div>
-
+<div class="page-header">
+  <h1><a href="{{ site.baseurl }}/blog/">Blog</a> &raquo; 流水帐 <small>({{ site.categories.diary|size }})</small></h1>
 </div>
+
+<section>
+  {% assign post_list = site.categories.diary %}
+  {% include post_list.html %}
+</section>

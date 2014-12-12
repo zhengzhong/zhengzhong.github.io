@@ -4,13 +4,11 @@ title: 思想起
 permalink: /blog/thoughts/
 ---
 
-<div id="category">
-
-  <div class="page-header"><h1>思想起 ({{ site.categories.thoughts|size }})</h1></div>
-
-  <div class="section">
-    {% assign post_list = site.categories.thoughts %}
-    {% include post_list.html %}
-  </div>
-
+<div class="page-header">
+  <h1><a href="{{ site.baseurl }}/blog/">Blog</a> &raquo; 思想起 <small>({{ site.categories.thoughts|size }})</small></h1>
 </div>
+
+<section>
+  {% assign post_list = site.categories.thoughts %}
+  {% include post_list.html %}
+</section>

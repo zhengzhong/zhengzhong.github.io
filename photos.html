@@ -1,13 +1,16 @@
 ---
 layout: default
+title: 'Photos'
+permalink: /photos/
 ---
 
-<div id="photos" class="container">
+<div class="container">
 
-  <div class="page-header"><h1>{{ page.title }}</h1></div>
-  <div>{{ content }}</div>
+  <div class="page-header">
+    <h1>Photos <a class="small" href="http://www.flickr.com/photos/zhengzhong">@Flickr</a></h1>
+  </div>
 
-  {% for album in page.albums %}
+  {% for album in site.data.flickr %}
     <div class="row">
       <div class="text-right">
         <a class="text-muted" style="margin-right: 20px; text-decoration: none;" href="{{ album.url }}">
@@ -25,7 +28,7 @@ layout: default
     </div>
   {% endfor %}
 
-  <script type="text/javascript">//<![CDATA[
+  <script>//<![CDATA[
     $(function() {
       $('.photo img').one('load', function() {
         console.log('Loaded ' + $(this).attr('alt') + ' from ' + $(this).attr('src'));

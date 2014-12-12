@@ -1,0 +1,11 @@
+categories:
+  - slug: thoughts
+    text: '思想起'
+  - slug: diary
+    text: '流水帐'
+  - slug: coding
+    text: '有关编程'
+  - slug: interests
+    text: '无关编程'
+  - slug: unclassified
+    text: '杂七杂八'

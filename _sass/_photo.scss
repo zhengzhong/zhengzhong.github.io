@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@import "mixins";
+
+.photo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  @include border-radius(6px);
+
+  img {
+    position: absolute;
+    width: 100%;
+  }
+
+  .caption,
+  .caption-fixed {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+
+    a {
+      color: #888;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .caption {
+    @include transition(all 0.2s);
+    @include transform(translateY(100%));
+  }
+
+  &:hover .caption,
+  &:active .caption {
+    @include transform(translateY(0));
+  }
+}

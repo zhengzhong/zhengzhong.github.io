@@ -4,13 +4,11 @@ title: 有关编程
 permalink: /blog/coding/
 ---
 
-<div id="category">
-
-  <div class="page-header"><h1>有关编程 ({{ site.categories.coding|size }})</h1></div>
-
-  <div class="section">
-    {% assign post_list = site.categories.coding %}
-    {% include post_list.html %}
-  </div>
-
+<div class="page-header">
+  <h1><a href="{{ site.baseurl }}/blog/">Blog</a> &raquo; 有关编程 <small>({{ site.categories.coding|size }})</small></h1>
 </div>
+
+<section>
+  {% assign post_list = site.categories.coding %}
+  {% include post_list.html %}
+</section>

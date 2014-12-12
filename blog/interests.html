@@ -4,13 +4,11 @@ title: 无关编程
 permalink: /blog/interests/
 ---
 
-<div id="category">
-
-  <div class="page-header"><h1>无关编程 ({{ site.categories.interests|size }})</h1></div>
-
-  <div class="section">
-    {% assign post_list = site.categories.interests %}
-    {% include post_list.html %}
-  </div>
-
+<div class="page-header">
+  <h1><a href="{{ site.baseurl }}/blog/">Blog</a> &raquo; 无关编程 <small>({{ site.categories.interests|size }})</small></h1>
 </div>
+
+<section>
+  {% assign post_list = site.categories.interests %}
+  {% include post_list.html %}
+</section>

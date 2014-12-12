@@ -1,36 +1,14 @@
 name: ZHENG Zhong
-pygments: true
+markdown: kramdown
+highlighter: pygments
 exclude: ['Rakefile', 'README.md', 'config.rb', '*.bat', '*.bak', 'scripts']
 permalink: /blog/:year/:month/:day/:title/
 relative_permalinks: false
 paginate: 10
 paginate_path: /blog/page:num
 
-# Custom config namespace
-custom_config:
+google_analytics_id: UA-356705-1
 
-  navigation:
-    - text: Blog
-      url: /blog/
-    - text: Photos
-      url: /photos/
-#    - text: Pages
-#      url: /pages/
-
-  categories:
-    - slug: thoughts
-      text: 思想起
-    - slug: diary
-      text: 流水帐
-    - slug: coding
-      text: 有关编程
-    - slug: interests
-      text: 无关编程
-    - slug: unclassified
-      text: 杂七杂八
-
-  disqus:
-    id: zhengzhong
-
-  google_analytics:
-    account: UA-356705-1
+sass:
+  sass_dir: _sass
+  style: :compressed
