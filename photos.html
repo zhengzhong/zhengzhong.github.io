@@ -12,11 +12,11 @@ permalink: /photos/
 
   {% for album in site.data.flickr %}
     <div class="row">
-      <div class="text-right">
+      <h3 class="text-right">
         <a class="text-muted" style="margin-right: 20px; text-decoration: none;" href="{{ album.url }}">
-          {{ album.title }} <span class="glyphicon glyphicon-camera"></span>
+          <span class="glyphicon glyphicon-camera"></span> {{ album.title }} &raquo;
         </a>
-      </div>
+      </h3>
       {% for photo in album.photos %}
         <div class="col-xs-6 col-md-3">
           <div class="photo">
