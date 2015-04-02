@@ -30,3 +30,29 @@ blockquote {
   margin-top: 0;
   padding-top: 0;
 }
+
+.list-inline.list-slim > li {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.affix {
+  top: 20px;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+.p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.text-lg {
+  font-size: 120%;
+}
+
+.fa.fa-dark {
+  color: #333;
+}

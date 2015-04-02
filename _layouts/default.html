@@ -29,11 +29,14 @@
     {% endif %}
     <!-- site-specific stylesheet -->
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet"/>
+    {% if page.theme %}
+      <link href="{{ site.baseurl }}/assets/css/{{ page.theme }}.css" rel="stylesheet"/>
+    {% endif %}
   </head>
 
   <body>
 
-    <header class="navbar navbar-default navbar-static-top" role="banner">
+    <nav id="topbar" class="navbar navbar-default navbar-static-top" role="banner">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
@@ -66,7 +69,7 @@
           });
         //]]></script>
       </div>
-    </header>
+    </nav>
 
     <div class="main">
       {{ content }}

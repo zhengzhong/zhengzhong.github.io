@@ -74,9 +74,24 @@
     }
     img {
       padding: 5px;
+      margin: 0 5px 5px 0;
+      display: inline-block;
       max-width: 640px;
       border: 1px solid #ddd;
       @include border-radius(5px);
+    }
+
+    // Image styles from "alt" attribute, allowing image styling with markdown:
+    //     ![Some Alt Text, img-md]({{ site.baseurl }}/path/to/image.png)
+
+    img[alt~="img-md"] {
+      max-width: 400px;
+    }
+    img[alt~="img-sm"] {
+      max-width: 200px;
+    }
+    img[alt~="img-xs"] {
+      max-width: 100px;
     }
   }
 }

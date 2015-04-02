@@ -1,9 +1,10 @@
 _site/
-.sass-cache/
 .idea/
+.sass-cache/
 
 .DS_Store
 *.bak
 *.bak.*
+*.draft
 *.draft.*
 *.py[co]
