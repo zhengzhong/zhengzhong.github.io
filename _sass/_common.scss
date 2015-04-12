@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "site/colors";
+
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
 
 body {
@@ -49,8 +51,38 @@ blockquote {
   margin-bottom: 10px;
 }
 
+$btn-hollow-color: if(variable-exists(site-color-primary), $site-color-primary, #666);
+
+.btn.btn-hollow {
+  background-color: rgba(#fff, 0);  // transparent background
+  color: $btn-hollow-color;
+  border: 1px solid $btn-hollow-color;
+  &:hover {
+    color: #fff;
+    background-color: $btn-hollow-color;
+  }
+
+  &.btn-hollow-inverse {
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      color: $btn-hollow-color;
+      background-color: #fff;
+    }
+  }
+}
+
+hr.half-rule {
+  margin: 20px auto;
+  width: 100px;
+}
+
 .text-lg {
   font-size: 120%;
+}
+
+.text-xxl {
+  font-size: 400%;
 }
 
 .fa.fa-dark {
