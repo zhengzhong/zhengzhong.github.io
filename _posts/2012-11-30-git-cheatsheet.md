@@ -93,6 +93,12 @@ Push changes to remote repository
     $ git push origin master
 
 
+Show changed filenames in a commit
+==================================
+
+    $ git diff --name-only -r <commit-SHA>
+
+
 Create tags
 ============
 
