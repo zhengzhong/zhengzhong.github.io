@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Notes: Eloquent JavaScript: Part 1: Language
+title: 'Notes: Eloquent JavaScript: Part 1: Language'
 categories: ['coding']
+tags: ['JavaScript']
 ---
 
 **Contents:**
