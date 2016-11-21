@@ -1,6 +1,6 @@
 name: ZHENG Zhong
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 exclude: ['Rakefile', 'README.md', 'config.rb', '*.bat', '*.bak', 'scripts']
 permalink: /blog/:year/:month/:day/:title/
 relative_permalinks: false
