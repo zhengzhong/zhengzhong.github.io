@@ -1,6 +1,7 @@
 _site/
 .idea/
 .sass-cache/
+Gemfile.lock
 
 .DS_Store
 *.bak
