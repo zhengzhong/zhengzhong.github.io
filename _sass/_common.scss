@@ -46,11 +46,6 @@ blockquote {
   position: absolute;
 }
 
-.p {
-  display: block;
-  margin-bottom: 10px;
-}
-
 $btn-hollow-color: if(variable-exists(site-color-primary), $site-color-primary, #666);
 
 .btn.btn-hollow {
