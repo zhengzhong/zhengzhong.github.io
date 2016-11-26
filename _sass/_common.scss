@@ -2,11 +2,15 @@
 
 @import "site/colors";
 
-@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+@import url("http://fonts.googleapis.com/css?family=Roboto");
 
 body {
-  font-family: "Open Sans","Lucida Grande","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",微软雅黑,宋体,sans-serif;
-  font-size: 14px;
+  font-family: "Roboto","Lucida Grande","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",微软雅黑,宋体,sans-serif;
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: 16px;
 }
 
 a:hover,
@@ -82,4 +86,13 @@ hr.half-rule {
 
 .fa.fa-dark {
   color: #333;
+}
+
+code.highlighter-rouge {
+  background-color: transparent;
+  color: #888;
+}
+
+pre.highlight {
+  padding: 16px;
 }
