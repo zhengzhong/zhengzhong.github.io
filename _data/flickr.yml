@@ -1,6 +1,9 @@
 - title: 'Landscape &bull; 风景'
   url: https://www.flickr.com/photos/zhengzhong/tags/landscape/
   photos:
+    - title: '夜巴黎，铁塔的另一边'
+      image: https://c7.staticflickr.com/6/5731/23033562974_cd9703efc5_z.jpg
+      url: https://www.flickr.com/photos/zhengzhong/23033562974
     - title: 'Dinant, Belgium'
       image: https://farm8.staticflickr.com/7171/13961395184_d209734e58_z.jpg
       url: https://www.flickr.com/photos/zhengzhong/13961395184
@@ -16,9 +19,6 @@
     - title: 'Serre Chevalier'
       image: https://farm6.staticflickr.com/5526/11634228853_cc031f9303_z.jpg
       url: https://www.flickr.com/photos/zhengzhong/11634228853/
-    - title: 'Serre Chevalier'
-      image: https://farm6.staticflickr.com/5495/11634782036_a4aebda40c_z.jpg
-      url: https://www.flickr.com/photos/zhengzhong/11634782036/
     - title: 'Venice'
       image: https://farm4.staticflickr.com/3656/3390398219_f28d610fa3_z.jpg
       url: https://www.flickr.com/photos/zhengzhong/3390398219/
