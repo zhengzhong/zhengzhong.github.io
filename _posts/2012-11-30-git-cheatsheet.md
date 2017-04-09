@@ -96,7 +96,7 @@ Push changes to remote repository
 Show changed filenames in a commit
 ==================================
 
-    $ git diff --name-only -r <commit-SHA>
+    $ git diff-tree --no-commit-id --name-only -r <commit-SHA>
 
 
 Create tags
@@ -234,4 +234,3 @@ Copy these patch files to another repository where the patches need to be applie
     # If there are errors, we can still apply just the parts that will work.
     # Following command will apply the patch while generating *.rej files:
     $ git apply --reject 0001-Committed-first-version-of-my-Jekyll-site.patch
-
